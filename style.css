@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     max-width: 960px;
     margin: auto;
 }
@@ -10,23 +10,27 @@ h1 {
     letter-spacing: .6em;
     padding-top: 1em;
     padding-bottom: 1em;
+    font-weight: 100; /* Move this here if you want h1 to be lighter */
 }
 
 h2 {
     font-size: 1.5em;
     padding-bottom: 1em;
+    color: aquamarine;
 }
 
 h3 {
     font-size: 1em;
     padding-bottom: 1em;
+    font-weight: bold; /* Ensure this is the only rule for h3's weight */
+    color: black;
 }
 
-    main { 
-        display: grid;
-        grid-template-columns: 40% 60%;
-        margin-top: 3em;
-    }
+main { 
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 3em;
+}
 
 header {
     text-align: center;
@@ -42,7 +46,7 @@ i {
 }
 
 p {
-    margin: .2em auto
+    margin: .2em auto;
 }
 
 hr {
@@ -51,11 +55,16 @@ hr {
     height: 1px;
 }
 
-h1, h2, h3 {
-    font-weight: 100;
+h1, h3 { /* Remove font-weight: 100 from here */
     margin-bottom: 0;
 }
 
 #mainLeft {
     border-right: 1px solid lightgray;
+}
+
+.job-title {
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
 }
